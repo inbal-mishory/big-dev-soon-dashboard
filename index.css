@@ -1,19 +1,288 @@
-/* This is an example CSS file, feel free to remove/edit it anytime */
-.footer {
+/* CSS Resest curtesy of Josh Comeau https://www.joshwcomeau.com */
+
+/* Use a more-intuitive box-sizing model. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+
+* {
+  margin: 0;
+}
+
+/* Color variables */
+:root {
+  --white-base: #FFFFFF;
+  --white60opacity: rgb(255, 255, 255, 60%);
+  --white20opacity: rgb(255, 255, 255, 20%);
+  --white16opacity: rgb(255, 255, 255, 16%);
+  --white8opacity: rgb(255, 255, 255, 8%);
+  --yellow: #FFD74B;
+  --lightred: #FDD5DA;
+  --darkred: #FF5E75;
+  --lightgreen: #B8E9D4;
+  --darkgreen: #2CC483;
+  --black: #000000;
+  --black60opacity: rgb(0, 0, 0, 60%);
+  --black16opacity: rgb(0, 0, 0, 16%);
+  --blue: rgb(105, 111, 251);
+  --blue60opacity: rgb(105, 111, 251, 60%);
+  --blue32opacity: rgb(105, 111, 251, 32%);
+  --blue24opacity: rgb(105, 111, 251, 24%);
+  --blue20opacity: rgb(105, 111, 251, 20%);
+  --blue12opacity: rgb(105, 111, 251, 12%);
+  --blue8opacity: rgb(105, 111, 251, 8%);
+}
+
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: Roboto, sans-serif;
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Improve media defaults */
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove built-in form typography styles */
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Avoid text overflows */
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+main {
+  display: grid;
+  height: 100vh;
+}
+
+main.side-open {
+  grid-template-columns: 183px 1fr;
+}
+
+main.side-closed {
+  grid-template-columns: 64px 1fr;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 72px 244px 183px 183px auto;
+  border-right: 1px solid var(--black16opacity);
+  .open {
+    width: 183px;
+  }
+}
+
+.sidebar-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px 0 8px;
+  width: 183px;
+}
+
+.sidebar.close .sidebar-head {
+  width: 64px;
+  padding: 0 8px;
+}
+
+.logo-type {
+  background: url('assets/icons/Logotype.svg') no-repeat;
+  background-size: 108px 28px;
+  width: 108px;
+  height: 30px;
+}
+
+.sidebar.close .logo-type {
+  background: url('assets/icons/logo.svg') no-repeat;
+  background-size: 28px 28px;
+}
+
+.toggle-sidebar {
+  width: 16px;
+  height: 16px;
+  background: var(--white-base) url('assets/icons/open-nav-icon.svg') no-repeat;
+  background-size: 12px;
+  transform: rotateY(180deg);
+  border-radius: 4px;
+  border: 2px solid var(--black16opacity);
+}
+
+.sidebar.close .toggle-sidebar {
+  transform: rotateY(0deg);
+}
+
+.link-group {
+  display: grid;
+  grid-template-rows: repeat(3, 61px);
+  border-bottom: 1px solid var(--black16opacity);
+  height: 183px;
+}
+
+.sidebar.close .link-group {
+  width: 64px;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+li {
+  height: 61px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-inline-start: 16px;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 0 8px 0 4px;
+  height: 32px;
+  color: var(--black60opacity);
+  font-weight: 700;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: #666666;
+}
+
+a.active,
+a:hover {
+  background: var(--blue24opacity);
+  border-radius: 4px;
+  color: var(--blue);
+  cursor: pointer;
+
+  .icon {
+    filter: invert(.5) sepia(1) saturate(5) hue-rotate(198.4deg);
+  }
+}
+
+.sidebar.close a span {
+  display: none;
+}
+
+.link-group.first-cell {
+  grid-template-rows: repeat(4, 61px);
+  height: 244px;
+}
+
+.last-cell {
+  display: grid;
+  grid-template-rows: 64px auto;
+
+  .choose-theme-container {
+    min-width: 141px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 32px;
+    justify-self: center;
+    align-self: flex-end;
+  }
+
+  span {
+    color: var(--black60opacity);
+  }
+}
+
+.sidebar.close .last-cell {
+  width: 64px;
+}
+
+.sidebar.close .choose-theme-container {
+  min-width: unset;
+  justify-self: center;
+  max-width: 52px;
+}
+
+/* Toggle hack */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
   position: absolute;
-  bottom: 0;
+  cursor: pointer;
+  top: 0;
   left: 0;
   right: 0;
-  padding: 10px;
-  text-align: center;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-.footer a {
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-.footer span {
-  font-size: 14px;
+input:checked + .slider {
+  background: var(--blue) url('/assets/icons/light-theme-icon.svg') no-repeat;
+  background-size: 24px;
 }
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--blue);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 24px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.sidebar.close .choose-theme-container .text {
+  display: none;
+}
+
+h2 {
+  font-size: 26px;
+}
+

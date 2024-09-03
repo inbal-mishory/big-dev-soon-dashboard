@@ -1,21 +1,119 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <bds />
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js" defer></script>
-    <title>BigDevSoon - Dashboard Project</title>
-  </head>
-  <body>
-    <!-- Place below is for your own exciting code -->
-    <p>Time to write some code! 👀</p>
-    <!-- Change the [ME] part to your own name/GitHub link -->
-    <div class="footer">
-      <a href="https://bigdevsoon.me" target="_blank" rel="noopener noreferrer"
-        >Project by BigDevSoon</a
-      >
-      |
-      <span>Built with ❤️ by [ME]</span>
-    </div>
-  </body>
+<html lang="en">
+<head>
+  <!-- <bds/> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BigDevSoon Dashboard project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/index.css" />
+</head>
+
+<body>
+  <main class="side-open">
+    <section class="sidebar open">
+      <div class="sidebar-head">
+        <div class="logo-type"></div>
+        <button class="toggle-sidebar"></button>
+      </div>
+      <div class="link-group first-cell">
+        <ul>
+          <li>
+            <a class="active">
+              <img class="icon" width="24" height="24" src="assets/icons/dashboard-icon.svg" alt="dashboard-icon">
+              <span class="text">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img class="icon" width="24" height="24" src="./assets/icons/payment-icon.svg" id="paymentIcon" alt="payment-icon">
+              <span class="text">Payment</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img class="icon" width="24" height="24" src="assets/icons/customers-icon.svg" alt="customers-icon">
+              <span class="text">Customers</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img class="icon" width="24" height="24" src="assets/icons/messages-icon.svg" alt="messages-icon">
+              <span class="text">Messages</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="link-group">
+        <ul>
+          <li>
+            <a>
+              <img class="icon" width="24" height="24" src="assets/icons/product-icon.svg" alt="product-icon">
+              <span class="text">Product</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img class="icon" width="24" height="24" src="assets/icons/invoice-icon.svg" alt="invoice-icon">
+              <span class="text">Invoice</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img class="icon" width="24" height="24" src="assets/icons/analytics-icon.svg" alt="analytics-icon">
+              <span class="text">Analytics</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="link-group">
+        <ul>
+          <li>
+            <a>
+              <img class="icon" width="24" height="24" src="assets/icons/setting-icon.svg" alt="settings-icon">
+              <span class="text">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img class="icon" width="24" height="24" src="assets/icons/security-icon.svg" alt="security-icon">
+              <span class="text">Security</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <img class="icon" width="24" height="24" src="assets/icons/help-icon.svg" alt="help-icon">
+              <span class="text">Help</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="last-cell">
+        <ul>
+          <li>
+            <a>
+              <img class="icon" width="24" height="24" src="assets/icons/logout-icon.svg" alt="logout-icon">
+              <span class="text">Log Out</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="choose-theme-container">
+          <span class="text">Dark</span>
+          <label class="switch">
+            <input type="checkbox" checked="true">
+            <span class="slider round"></span>
+          </label>
+          <span class="text">Light</span>
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <h2>Dashboard</h2>
+    </section>
+  </main>
+  <script src="./index.js"></script>
+</body>
 </html>

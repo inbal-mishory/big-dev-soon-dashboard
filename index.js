@@ -1,6 +1,20 @@
-/* This is an example JavaScript file, feel free to remove/edit it anytime */
-console.log(
-  "%cProject by BigDevSoon",
-  'font-size: 40px; font-weight: bold; color: #8A2BE2; font-family: "Comic Sans MS", cursive, sans-serif;'
-);
-console.log("Check out more projects at https://bigdevsoon.me");
+document.addEventListener("DOMContentLoaded", () => {
+  const main = document.querySelector("main");
+  const sidebar = document.querySelector(".sidebar");
+  document.querySelector(".toggle-sidebar").addEventListener("click", (e) => {
+    if(main.classList.contains("side-open")) {
+      main.classList.remove("side-open");
+      main.classList.add("side-closed");
+
+      sidebar.classList.remove("open");
+      sidebar.classList.add("close");
+    } else {
+      main.classList.remove("side-closed");
+      main.classList.add("side-open");
+
+      sidebar.classList.remove("close");
+      sidebar.classList.add("open");
+    }
+  })
+  
+});
