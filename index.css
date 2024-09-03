@@ -255,7 +255,7 @@ a:hover {
 }
 
 input:checked + .slider {
-  background: var(--blue) url('/assets/icons/light-theme-icon.svg') no-repeat;
+  background: var(--blue) url('assets/icons/light-theme-icon.svg') no-repeat;
   background-size: 24px;
 }
 
