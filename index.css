@@ -111,17 +111,18 @@ main.side-closed {
 .sidebar.close .logo-type {
   background: url('assets/icons/logo.svg') no-repeat;
   background-size: 28px 28px;
+  width: 32px;
 }
 
 .toggle-sidebar {
   width: 16px;
   height: 16px;
   background: var(--white-base) url('assets/icons/open-nav-icon.svg') no-repeat;
-  background-size: 12px;
+  background-size: 12px 12px;
   transform: rotateY(180deg);
   border-radius: 4px;
   border: 2px solid var(--black16opacity);
-  cursor: hand;
+  cursor: pointer;
 }
 
 .sidebar.close .toggle-sidebar {
@@ -178,26 +179,26 @@ li {
   background: var(--blue24opacity);
   border-radius: 4px;
   color: var(--blue);
-  cursor: pointer;
 
   .icon {
     filter: invert(.5) sepia(1) saturate(5) hue-rotate(198.4deg);
   }
 }
 
-.sidebar.close .item {
+.sidebar.close span.item {
   column-gap: 0;
   width: 36px;
 }
 
-span.text {
+a.text {
   opacity: 1;
   width: 100px;
   transition: width 750ms ease-in-out,
               opacity 750ms ease-out;
+  cursor: pointer;
 }
 
-.sidebar.close span.text {
+.sidebar.close a.text {
   opacity: 0;
   width: 0;
 }
