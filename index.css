@@ -185,7 +185,7 @@ li {
   }
 }
 
-.sidebar.close a.item {
+.sidebar.close .item {
   column-gap: 0;
   width: 36px;
 }
