@@ -1,0 +1,24 @@
+<svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="12" height="13"/>
+<g id="Dashboard - Toggle Menu - Light Theme" clip-path="url(#clip0_0_1)">
+<rect width="1512" height="982" transform="translate(-231 -240)" fill="none"/>
+<rect id="Rectangle 17" x="-47" y="-176" width="1328" height="918" fill="#696FFB" fill-opacity="0.04"/>
+<g id="Rectangle 54">
+<rect x="-24" y="-118.5" width="298" height="157" rx="8" fill="none"/>
+<rect x="-23.5" y="-118" width="297" height="156" rx="7.5" stroke="black" stroke-opacity="0.16"/>
+</g>
+<g id="Frame 216">
+<rect x="-4" y="-5.5" width="70" height="24" rx="4" fill="none"/>
+<g id="Frame 216_2">
+<g id="octicon:arrow-up-16">
+<path id="Vector" d="M2.16324 6.61503C2.05871 6.51038 2 6.36851 2 6.22059C2 6.07267 2.05871 5.93081 2.16324 5.82615L5.32622 2.66316C5.43088 2.55864 5.57275 2.49992 5.72067 2.49992C5.86858 2.49992 6.01045 2.55864 6.11511 2.66316L9.27809 5.82615C9.37664 5.93202 9.4303 6.07198 9.4278 6.2166C9.4253 6.36121 9.36684 6.49923 9.2647 6.60164C9.16229 6.70378 9.02427 6.76224 8.87966 6.76474C8.73504 6.76724 8.59509 6.71358 8.48921 6.61503L6.27884 4.40467V9.94175C6.27884 10.0898 6.22003 10.2318 6.11536 10.3364C6.01068 10.4411 5.8687 10.4999 5.72067 10.4999C5.57263 10.4999 5.43066 10.4411 5.32598 10.3364C5.2213 10.2318 5.16249 10.0898 5.16249 9.94175V4.40467L2.95213 6.61503C2.84747 6.71956 2.7056 6.77827 2.55768 6.77827C2.40977 6.77827 2.2679 6.71956 2.16324 6.61503Z" fill="black"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1512" height="982" fill="none" transform="translate(-231 -240)"/>
+</clipPath>
+</defs>
+</svg>
