@@ -302,7 +302,26 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+
+
+.top-navigation {
+  height: 64px;
+  padding-left: 32px;
+  border-bottom: 1px solid var(--black16opacity);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 h2 {
   font-size: 26px;
 }
 
+.user-avatar {
+  width: 106px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-inline-start: 1px solid var(--black16opacity);
+}
