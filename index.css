@@ -139,6 +139,9 @@ main.side-closed {
 ul {
   list-style-type: none;
   padding-inline-start: 0;
+}
+
+ul.sidebar-links {
   width: 183px;
   transition: width 750ms ease-in-out;
 }
@@ -325,3 +328,57 @@ h2 {
   align-items: center;
   border-inline-start: 1px solid var(--black16opacity);
 }
+
+.general-data-container {
+  padding-top: 57.5px;
+  padding-left: 23px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  width:298px;
+  height: 157px;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid var(--black16opacity);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+.value {
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.change {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.trend {
+ padding: 4px 4px 4px 20px;
+ border-radius: 4px;
+}
+
+.up {
+  background: var(--lightgreen) url('assets/icons/arrow-up.svg') no-repeat;
+  background-position-x: 4px;
+  background-position-y: 8px;
+ }
+
+ .down {
+  background: var(--lightred) url('assets/icons/arrow-down.svg') no-repeat;
+  background-position-x: 4px;
+  background-position-y: 8px;
+ }
